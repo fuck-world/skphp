@@ -19,7 +19,7 @@
 <br /><br /><br />
 <a href="<?php echo URL('/sdfasfsdf');?>" target='_blank' title='未匹配路由404，直接加载404视图'>404 (:</a>
 <a href="<?php echo URL('/page-1');?>" target='_blank' title='分页'>分页</a>
-<a href="javascript:alert('开发中...');" target='_blank' title='验证码'>验证码</a>
+<a href="<?php echo URL('/yzmShow');?>" target='_blank' title='验证码'>验证码</a>
 <a href="<?php echo URL('/config');?>" target='_blank' title='数据缓存'>数据缓存</a>
 <a href="<?php echo URL('/cache');?>" target='_blank' title='配置文件'>配置文件</a>
 <br /><br /><br />
