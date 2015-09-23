@@ -26,6 +26,7 @@ Route::$patterns = [
 	':all' => '.*',
 	':id' => '.*',
 	':Nid' => '.*',
+	':p' => '.*',
 ];
 
 
@@ -53,6 +54,9 @@ Route::get('/article2-(:Nid)-(:num)-(:id)','admin\IndexController@index');
 Route::get('/article-(:num)-(:Nid)', function($a,$b) {
 	echo "文章 number".$a.$b;
 });
+
+// Page
+Route::get('/page-(:p)','PageController@index');
 
 // DB 
 Route::get('/db1','DbController@skphp');
