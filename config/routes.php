@@ -47,6 +47,13 @@ Route::get('/cache', 'IndexController@cache');
 // config
 Route::get('/config', 'IndexController@config');
 
+// Page
+Route::get('/page-(:p)','PageController@index');
+
+// Yzm
+Route::get('/yzm','YzmController@index');
+Route::get('/yzmShow','YzmController@yzm');
+
 
 // other demo
 Route::get('/article2-(:Nid)-(:num)-(:id)','admin\IndexController@index');
@@ -54,9 +61,6 @@ Route::get('/article2-(:Nid)-(:num)-(:id)','admin\IndexController@index');
 Route::get('/article-(:num)-(:Nid)', function($a,$b) {
 	echo "文章 number".$a.$b;
 });
-
-// Page
-Route::get('/page-(:p)','PageController@index');
 
 // DB 
 Route::get('/db1','DbController@skphp');
